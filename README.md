@@ -5,9 +5,7 @@ Materia: Algoritmos e Estruturas de Dados 1, ministrada por Jefferson Tales Oliv
 
 Alguns TAD's utilizados neste repositorio foram implementados pelo professor.
 
-
 # Struct - eletrodomésticos
-
 Implemente um programa que faça o controle do consumo de energia dos eletrodomésticos de um imóvel. Primeiro leia os N eletrodomésticos que contendo nome, potência (inteiro, em kW) e tempo ativo por dia (real, em horas). Em seguida, leia um número inteiro d (quantidade de dias) e calcule:
 
 O consumo total no imovel
@@ -33,7 +31,6 @@ Não utize a função gets para ler as strings. Em vez disso, use scanf (nos cas
 A primeira linha deve exibir o consumo total no imóvel seguido de N linhas com o consumo relativo de cada eletrodoméstico.
 
 # Struct - batalha em turnos
-
 Gladstone está desenvolvendo um jogo simples de RPG em que há batalhas, os quais são por turnos, onde, em cada luta, os jogadores se revezam em cada ataque. Cada personagem, além do nome (string), tem os seguintes atributos representados por números inteiros: energia, defesa e força. Em cada ataque, a energia do personagem que está sofrendo o golpe é reduzida. O dano (redução de energia) é dado pela subtração entre o atributo de força (F) do atacante e o atributo de defesa do personagem atacado, o qual pode ter redução de energia. Caso a diferença entre força (atacante) e defesa (atacado) seja menor igual a zero, o dano será de 1 ponto. Se o dano resultar em energia negativa, o valor da mesma para o personagem derrotado deverá ser "0". Em cada batalha, o perdedor será o personagem que tiver a energia zerada ou que tiver o menor valor de energia. Também, poderá ocorrer empate. É importante ressaltar que o personagem com energia zerada não pode mais atacar!
 
 Implemente uma função que receba duas variáveis referentes aos personagens e um número inteiro que represente a quantidade de turnos, onde o primeiro personagem fornecido como parâmetro começa o ataque. Ao final, a função deverá imprimir o resultado, indicando o nome personagem vencedor ou se houve empate.
@@ -76,3 +73,16 @@ Em cada linha, imprimir o conteúdo de um ponteiro seguido o seguinte padrão:
 "volume: valor"
 
 "comprimento da diagonal: valor"
+
+# Ponteiros - soma dobro
+Implemente um programa que leia três valores do tipo float (A, B e C). Em seguida faça uma função que receba três ponteiros do tipo float. Essa função deverá dobrar o valor em cada ponteiro e retornar a soma desses valores dobrados.Exemplo: se a função receber ponteiros com os valores A=3.0, B=4.0 e C=0.0, ao final da execução da função, A=6.0, B=8.0 e C=0.0 e retorno será 14.0.
+
+**Input Format:**
+
+A primeira linha contém um único inteiro N, indicando a quantidade de vezes que serão lidos os parâmetros da função.
+
+Nas próximas N linhas, ler três valores do tipo float.
+
+**Output Format:**
+
+Para cada vez em que os parâmetros da função forem lidos deverá ser apresentada uma linha de saída no seguinte formato: "A=X B=Y C=Z SOMA=TOTAL", sendo todos com precisão de uma casa decimal.
