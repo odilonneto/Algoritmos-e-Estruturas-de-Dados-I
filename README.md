@@ -6,7 +6,7 @@ Materia: Algoritmos e Estruturas de Dados 1, ministrada por Jefferson Tales Oliv
 Alguns TAD's utilizados neste repositorio foram implementados pelo professor.
 
 
-##Struct - eletrodomésticos
+**Struct - eletrodomésticos**
 Implemente um programa que faça o controle do consumo de energia dos eletrodomésticos de um imóvel. Primeiro leia os N eletrodomésticos que contendo nome, potência (inteiro, em kW) e tempo ativo por dia (real, em horas). Em seguida, leia um número inteiro d (quantidade de dias) e calcule:1
 
 O consumo total no imovel
