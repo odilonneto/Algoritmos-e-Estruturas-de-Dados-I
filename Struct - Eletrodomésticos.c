@@ -1,10 +1,3 @@
-/*Struct - Implemente um programa que faça o controle do consumo de energia dos eletrodomésticos de um imóvel.
-Primeiro os N eletrodomésticos que contendo nome, potência (kW) e tempo ativo por dia (horas). Em seguida, 
-leia um número inteiro d (dias) e calcule:
-O consumo total no imovel;
-O consumo total de cada eletrodoméstico; 
-O consumo relativo de cada eletrodoméstico*/
-
 #include <stdio.h>
 #include <string.h>
 #include <math.h>
