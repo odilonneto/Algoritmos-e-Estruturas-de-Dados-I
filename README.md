@@ -49,3 +49,30 @@ Na linha seguinte, deve ser lida a quantidade de rodadas que deverá ter a batal
 Na primeira e segunda linha, imprimir o nome e a energia restante do primeiro e do segundo personagem, após a execução das rodadas de ataques.
 
 Na terceira lunha, imprimir o nome do personagem vencedor ou "empate", caso os personagens tiverem a mesma quantidade de energia (neste exercício não levando em conta que os personagens possam iniciar uma batalha com diferentes valores de energia).
+
+# Ponteiros - parâmetros de paralelepípedo
+Escreva uma função que receba três variáveis (altura, largura e comprimento) do tipo float para a representação de um paralelepípedo reto e três ponteiros do tipo float. Nessa função, cada ponteiro deverá armazenar uma medida relacionada ao palalepípedo, como:
+
+área = 2 x altura x altura + 2 x altura x comprimento + 2 x largura x comprimento
+
+volume = altura x largura x comprimento
+
+comprimento da diagonal = √(altura^2+largura^2+comprimento^2)
+
+**Input Format:**
+
+Ler três variáveis do tipo float.
+
+**Constraints:**
+
+A impressão dos floats deve considerar apenas uma casa decimal.
+
+**Output Format:**
+
+Em cada linha, imprimir o conteúdo de um ponteiro seguido o seguinte padrão:
+
+"area: valor"
+
+"volume: valor"
+
+"comprimento da diagonal: valor"
