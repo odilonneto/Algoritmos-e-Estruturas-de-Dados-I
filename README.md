@@ -184,3 +184,24 @@ Na quarta linha deve ser impresso o resultado da subtração entre os números r
 Na quinta linha deve ser impresso o resultado da multiplicação entre os números racionais r1 e r2 seguindo o seguinte formato: "r1*r2=num/den".
 
 Na sexta linha deve ser impresso o resultado da divisão entre os números racionais r1 e r2 seguindo o seguinte formato: "r1/r2=num/den".
+
+# Listas estáticas - procurar sub-lista
+Implemente uma função que receba duas listas estáticas (l1, l2). A função deverá retornar a posição lista l2 dentro de l1. Caso a lista l2 não estiver na l1, retornar "-1".
+
+Exemplo:
+
+l1 = {1, 2, 3, 4, 5, 6, 7,** 8, 7, 6, 8**, 9, 10}
+
+l2 = {8, 7, 6, 8}
+
+No exemplo acima, l2 está (inicia) na posição 7 da lista l2.
+
+Para a implementação do exercício, utilize um TAD de listas estáticas, podendo ser o código que foi apresentado em aula (disponível no repositório da disciplina no GitHub).
+
+**Input Format:**
+
+Na primeira linha, enquanto "-1" não for lido, ler números inteiros. Na segunda linha, a mesma restrição da primeira linha deve ser aplicada.
+
+**Output Format:**
+
+Imprimir a posição da lista l2 na l1.
