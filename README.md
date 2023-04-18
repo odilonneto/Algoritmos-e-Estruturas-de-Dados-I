@@ -147,3 +147,42 @@ Em seguida, ler o conteúdo de duas matrizes lxc.
 **Output Format:**
 
 Imprimir o conteúdo da matriz resultante da soma.
+
+# TAD - números racionais
+Implemente um TAD (tipo abstrato de dados) para números racionais. O TAD deve ter as seguintes funções: criar número racional; soma; subtração; divisão; e mutiplicação entre números racionais.
+
+Para isso, pode ser considerada a estrutura e os protótipos de função abaixo:
+
+typedef struct{
+    int num, den; // numerador e denominador, respectivamente
+}RAC;
+
+RAC *criar(int num, int den);
+
+RAC *somar(RAC *r1, RAC *r2);
+
+RAC *subtrair(RAC *r1, RAC *r2);
+
+RAC *multiplicar(RAC *r1, RAC *r2);
+
+RAC *dividir(RAC *r1, RAC *r2);
+
+**Input Format:**
+
+A primeira linha é composta pelo numerador e denominador, respectivamente, do primeiro número racional.
+
+A segunda linha é composta pelo numerador e denominador, respectivamente, do segundo número racional.
+
+**Output Format:**
+
+Na primeira linha deve ser impresso o primeiro número racional no seguinte formato: "r1: num/den".
+
+Na segunda linha deve ser impresso o segundo número racional no seguinte formato: "r2: num/den".
+
+Na terceira linha deve ser impresso o resultado da soma entre os números racionais r1 e r2 seguindo o seguinte formato: "r1+r2=num/den".
+
+Na quarta linha deve ser impresso o resultado da subtração entre os números racionais r1 e r2 seguindo o seguinte formato: "r1-r2=num/den".
+
+Na quinta linha deve ser impresso o resultado da multiplicação entre os números racionais r1 e r2 seguindo o seguinte formato: "r1*r2=num/den".
+
+Na sexta linha deve ser impresso o resultado da divisão entre os números racionais r1 e r2 seguindo o seguinte formato: "r1/r2=num/den".
