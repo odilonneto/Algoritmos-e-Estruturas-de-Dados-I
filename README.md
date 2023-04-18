@@ -205,3 +205,20 @@ Na primeira linha, enquanto "-1" não for lido, ler números inteiros. Na segund
 **Output Format:**
 
 Imprimir a posição da lista l2 na l1.
+
+# Pilhas estáticas - mina de diamante
+O Sr. Alcídes está trabalhando em uma mina para extrair o máximo que consegue de diamantes "<>". Ele deve excluir todas as particulas de areia "." do processo e a cada retirada de diamante, novos diamantes poderão ser encontrados. Se ele tem como uma entrada .<...<<..>>....>....>>>., três diamantes são formados: "O primeiro é retirado de "<..>", "<>" e "<.......>". Implemente uma função que receba uma string representado a carga com areia e diamante. A função deverá retornar a quantidade de diamantes contidas na carga. Para a solução do problema, deve ser utilizada uma pilha estática.
+
+Para a implementação do exercício, utilize um TAD de pilhas estáticas, podendo ser um dos códigos que foi apresentado em aula (disponível no repositório da disciplina no GitHub).
+
+**Input Format:**
+
+Deve ser lido um valor inteiro N que representa a quantidade de casos de teste. Cada linha a seguir é uma string que contém apenas os seguintes caracteres: "<", ">" e ".".
+
+**Constraints:**
+
+Os elementos da pilha podem ser manipulados apenas utilizando funções de empilhar e desempilhar.
+
+**Output Format:**
+
+A quantidade de diamantes possíveis de serem extraídos em cada caso de entrada deve ser impressa.
