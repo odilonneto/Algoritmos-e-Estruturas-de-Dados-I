@@ -134,3 +134,16 @@ Em seguida, ler os elementos de uma matriz NxN de números inteiros.
 **Output Format:**
 
 Em uma única, linha, imprimir o conteúdo do vetor com os elementos da diagonal da matriz.
+
+# Alocação dinâmica - soma entre matrizes
+Implemente uma função que receba duas matrizes de números inteiros com dimensões iguais. A função deverá retornar uma matriz (int**), alocada dinamicamente, resultante da soma das duas matrizes de entrada.
+
+**Input Format:**
+
+Na primeira linha devem ser lidos dois números inteiros: um para a quantidade de linhas (l) e outro para a quantidade de colunas (c).
+
+Em seguida, ler o conteúdo de duas matrizes lxc.
+
+**Output Format:**
+
+Imprimir o conteúdo da matriz resultante da soma.
