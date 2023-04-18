@@ -121,3 +121,16 @@ Caso a ação representada pelo caractere "A", ainda deverá ser definido qual d
 Na primeira e segunda linha, imprimir o nome e a energia restante do primeiro e do segundo personagem, após a execução das rodadas de ataques.
 
 Na terceira lunha, imprimir o nome do personagem vencedor ou "empate", caso os personagens tiverem a mesma quantidade de energia (neste exercício não levando em conta que os personagens possam iniciar uma batalha com diferentes valores de energia).
+
+# Alocação dinâmica - diagonal de matrizes
+Implemente uma função que receba uma matriz quadrática de números inteiros. A função deverá retornar um vetor (ponteiro) alocado dinamicamente com os elementos da diagonal principal da matriz.
+
+**Input Format:**
+
+Na primeira linha deve ser lido um número inteiro N representando a dimensão da matriz.
+
+Em seguida, ler os elementos de uma matriz NxN de números inteiros.
+
+**Output Format:**
+
+Em uma única, linha, imprimir o conteúdo do vetor com os elementos da diagonal da matriz.
