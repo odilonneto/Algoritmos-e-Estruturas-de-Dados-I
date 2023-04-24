@@ -222,3 +222,20 @@ Os elementos da pilha podem ser manipulados apenas utilizando funções de empil
 **Output Format:**
 
 A quantidade de diamantes possíveis de serem extraídos em cada caso de entrada deve ser impressa.
+
+# Filas estáticas - inserção ordenada
+Implemente uma função que receba um fila estática de números inteiros e uma chave, também do tipo inteiro. A função deverá inserir a chave na fila de forma os os elementos sejam mantidos ordenados em ordem descrescente. Para a inserção de novos elementos será necessário o uso uma fila auxiliar, já que apenas as operações de enfileirar e desenfileirar são permitidas para a manipulação dos elementos. Adicionalmente, pode ser usada/implementada uma função para verificar qual elemento está no início e no fim da fila.
+
+Para a implementação do exercício, utilize um TAD de filas estáticas, podendo ser o código que foi apresentado em aula (disponível no repositório da disciplina no GitHub).
+
+**Input Format:**
+
+Enquanto "-1" não for lido, ler números inteiros.
+
+**Constraints:**
+
+O acesso aos elementos da fila deve ser através da função desenfileirar.
+
+**Output Format:**
+
+Imprimir a fila ordenada em ordem decrescente.
