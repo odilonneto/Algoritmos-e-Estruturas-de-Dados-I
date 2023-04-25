@@ -239,3 +239,28 @@ O acesso aos elementos da fila deve ser através da função desenfileirar.
 **Output Format:**
 
 Imprimir a fila ordenada em ordem decrescente.
+
+# Listas encadeadas - elementos em comum
+Implemente uma função que receba duas listas encadeadas (l1 e l2). A função deverá retornar uma lista encadeada ordenada com os elementos existentes nas duas listas de entrada.
+
+Exemplo:
+
+Entrada:
+l1 = {1, 2, 3, 4, 5, 6}
+
+l2 = {6, 8, 10, 1, 7, 4}
+
+Saída:
+l3= {1, 4, 6}
+
+Para a implementação do exercício, utilize um TAD de listas encadeadas, podendo ser um dos códigos que foi apresentado em aula (disponível no repositório da disciplina no GitHub).
+
+**Input Format:**
+
+Na primeira linha, enquanto -1 não for lido, ler números inteiros e colocá-los na lista l1.
+
+Na segunda linha, enquanto -1 não for lido, ler números inteiros e colocá-los na lista l2.
+
+**Output Format:**
+
+Imprimir o conteúdo da lista (l3) retornada pela função.
