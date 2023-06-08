@@ -264,14 +264,3 @@ Na segunda linha, enquanto -1 não for lido, ler números inteiros e colocá-los
 **Output Format:**
 
 Imprimir o conteúdo da lista (l3) retornada pela função.
-
-+----------------------+
-|        Roda          |
-+----------------------+
-| - roda: boolean      |
-+----------------------+
-| + Roda()             |
-| + setCalibragem(acao: boolean): void |
-| + getCalibragem(): boolean |
-| + rodaToString(): String |
-+----------------------+
