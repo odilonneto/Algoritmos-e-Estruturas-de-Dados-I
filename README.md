@@ -151,19 +151,21 @@ Implemente um TAD (tipo abstrato de dados) para números racionais. O TAD deve t
 
 Para isso, pode ser considerada a estrutura e os protótipos de função abaixo:
 
-typedef struct{
-    int num, den; // numerador e denominador, respectivamente
-}RAC;
+    typedef struct{
 
-RAC *criar(int num, int den);
+        int num, den; // numerador e denominador, respectivamente
+        
+    }RAC;
 
-RAC *somar(RAC *r1, RAC *r2);
+    RAC *criar(int num, int den);
 
-RAC *subtrair(RAC *r1, RAC *r2);
+    RAC *somar(RAC *r1, RAC *r2);
 
-RAC *multiplicar(RAC *r1, RAC *r2);
+    RAC *subtrair(RAC *r1, RAC *r2);
 
-RAC *dividir(RAC *r1, RAC *r2);
+    RAC *multiplicar(RAC *r1, RAC *r2);
+
+    RAC *dividir(RAC *r1, RAC *r2);
 
 **Input Format:**
 
@@ -333,3 +335,117 @@ Para cada uma das N próximas linhas, ler dois números inteiros (a e b)
 **Output Format:**
 
 Em cada uma das N linhas, imprimir o resultado do resto da divisão dos respectivos números inteiros.
+
+# Algoritmos de busca - recuperação recorrente mover-para-frente recursivo
+Implemente uma função que receba um arranjo de números inteiros. Nessa função deverá ser implementado, utilizando recursão, o método de recuperação recorrente mover-para-frente, no qual, cada vez que um registro é recuperado com sucesso, ele é movimentado para a primeira posição.
+
+**Input Format:**
+
+Na primeira linha, ler um número inteiro (n) referente ao tamanho do arranjo.
+
+Na segunda linha, ler os n elementos do vetor
+
+Na terceira linha deve ser lida a quantidade de chaves que deverão ser procuradas). A partir da próxima linha, as chaves que serão procuradas devem ser lidas.
+
+**Output Format:**
+
+Após execução do algoritmo para cada caso teste, imprimir o arranjo.
+
+# Algoritmos de ordenação - ordenar linhas de uma matriz
+Implemente uma função que receba uma matriz de números inteiros. A função deverá ordenar, em ordem decrescente, cada linha da matriz.
+
+**Input Format:**
+
+Na primeira linha, devem ser lidos dois números inteiros: l (linhas) e c (colunas).
+
+Para cada uma das l linhas seguintes devem ser lidos c números inteiros.
+
+**Output Format:**
+
+Imprimir a matriz com as linhas ordenadas.
+
+# Algoritmos de ordenação - recursividade na ordenação simples de uma lista encadeada de floats
+Implemente, utilizando recursão, um dos algoritmos de ordenação simples apresentados em sala de aula (bublesort, selection sort ou insertion sort) para a ordenação de uma lista encadeada de floats.
+
+**Input Format:**
+
+Enquanto -1 não for lido, ler um float e colocá-lo na lista encadeada de floats.
+
+**Constraints:**
+
+No seu código pode ter, no máximo, apenas um loop.
+
+**Output Format:**
+
+Imprimir o contrúdo da lista ordenada.
+
+# Ordenação de strings - ordenação simples em listas encadeadas de strings
+Implemente um algoritmo de ordenação simples para ordenar uma lista encadeada de strings.
+
+**Input Format:**
+
+Na primeira linha deve ser lida a quantidade de elementos que serão inseridos na lista encadedade. A partir da segunda linha, ler as strings e colicá-las na lista encadeada.
+
+**Output Format:**
+
+Imprimir o conteúdo da lista encadeada após a ordenação.
+
+# Ordenação de structs - Ordenação de dados de alunos
+Adapte um dos algorimos de ordenação para o vetor de elementos da seguinte estrutura:
+
+ 
+    typedef struct{
+        int matricula;
+        
+        char* nome;
+        
+        char* curso;
+        
+        float coef;
+    }Aluno;
+
+A ordenação deve ser por nome. Caso haja registros com o mesmo nome, o critério de ordenação nesse caso é a matrícula.
+
+**Input Format:**
+
+Na primeira linha deve ser lido o tamanho do vetor. A partir da segunda linha, ler os dados de cada elemento do vetor.
+
+**Output Format:**
+
+Imprimir os registro ordenados. Diferentemente da forma leitura, cada registro deve ser impresso em uma linha.
+
+# Matrizes esparsas - vetor com soma de linhas da matriz
+Implemente uma função que receba uma matriz esparsa. A função deverá retornar um vetor onde o i-ésimo elemento é igual a soma de todos os elementos da i-ésima coluna da matriz.
+
+**Input Format:**
+
+A primeira linha contém os números de linhas e de colunas. Em seguida, uma matriz deve ser lida. Lembre-se: 0 é valor nulo, ou seja, deve ser ignorado.
+
+**Constraints:**
+
+Deve ser utilizada uma estrutura de matriz esparsa, como a que foi apresentada em sala de aula.
+
+Será atribuída a nota zero no caso em que a verificação for feita em matriz de inteiros em vez de matriz esparsa.
+
+**Output Format:**
+
+Imprimir o vetor.
+
+# Matrizes esparsas - comparação com vetor
+Implemente uma função que receba uma matriz esparsa e um vetor de números inteiros. A função deverá comparar o vetor com cada linha da matriz. Caso o vetor seja encontrado, deve ser retornada a linha em que o mesmo foi localizado. Caso contrário, a função deverá retornar -1.
+
+**Input Format:**
+
+A primeira linha contém os números de linhas (l) e de colunas (c). Em seguida, uma matriz deve ser lida. Lembre-se: 0 é valor nulo, ou seja, deve ser ignorado.
+
+Por fim, deve ser lido um vetor com c elementos.
+
+**Constraints:**
+
+Deve ser utilizada uma estrutura de matriz esparsa, como a que foi apresentada em sala de aula.
+
+Será atribuída a nota zero no caso em que a verificação for feita em matriz de inteiros em vez de matriz esparsa.
+
+**Output Format:**
+
+Imprimir a posição da primeira linha em que o vetor foi encontrado. Caso o vetor não seja em encontrado, imprimir -1
