@@ -449,3 +449,41 @@ Será atribuída a nota zero no caso em que a verificação for feita em matriz 
 **Output Format:**
 
 Imprimir a posição da primeira linha em que o vetor foi encontrado. Caso o vetor não seja em encontrado, imprimir -1
+
+# Matrizes esparsas - matriz triangular
+Implemente uma função que verifica se a matriz esparsa é uma matriz triangular, onde todos os elementos acima ou abaixo da diagonal principal são obrigatoriamente nulos.
+
+**Input Format:**
+
+Na primeira linha deve ser lido um número inteiro, que representará os números de linhas e de colunas (matriz quadrada). Em seguida, uma matriz deve ser lida. Por último, a matriz bidimensional deve ser convertida para uma matriz esparsa.
+
+**Constraints:**
+
+Deve ser utilizada uma estrutura de matriz esparsa, como a que foi apresentada em sala de aula.
+
+Será atribuída a nota zero no caso em que a verificação for feita em matriz de inteiros em vez de matriz esparsa.
+
+**Output Format:**
+
+Deve ser impresso "triangular" se a matriz for triangular ou "nao triangular", caso contrário.
+
+# Matrizes esparsas - Soma entre matrizes esparsas
+Implemente uma função que receba duas matrizes esparsas (m1 e m2). A função deverá retornar uma matriz esparsa resultante da soma de m1 e m2. Caso as matrizes tenham dimensões diferentes, a soma se dará a partir da primeira linha e da primeira coluna (como se uma matriz menor fosse colocada em cima da matriz maior mais ao topo e lado esquerdo possível).
+
+**Input Format:**
+
+A primeira linha contém os números de linhas (l) e de colunas (c). Em seguida, a primeira matriz deve ser lida.
+
+Após leia os números de linhas (l) e de colunas (c) novamente. Posteriormente, a segunda matriz deve ser lida.
+
+Lembre-se: 0 é valor nulo, ou seja, deve ser ignorado.
+
+**Constraints:**
+
+Deve ser utilizada uma estrutura de matriz esparsa, como a que foi apresentada em sala de aula.
+
+Será atribuída a nota zero no caso em que a verificação for feita em matriz de inteiros em vez de matriz esparsa.
+
+**Output Format:**
+
+Imprimir o conteúdo da matriz esparsa de saída como arranjo bidimensional.
