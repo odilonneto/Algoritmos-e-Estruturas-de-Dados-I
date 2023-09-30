@@ -264,3 +264,22 @@ Na segunda linha, enquanto -1 não for lido, ler números inteiros e colocá-los
 **Output Format:**
 
 Imprimir o conteúdo da lista (l3) retornada pela função.
+
+# Pilhas encadeadas - conversão de número decimal para uma base específica
+Implemente um número que receba dois números inteiros: número na base decimal (n) e a base (b). A função deverá retornar uma pilha encadeada resultante da conversão de n na base b.
+
+Para a implementação do exercício, utilize um TAD de pilhas encadeadas, podendo ser um dos códigos que foi apresentado em aula (disponível no repositório da disciplina no GitHub).
+
+**Input Format:**
+
+Ler dois números inteiros na seguinte sequência: número na base decimal e a base em que o número decimal será convertido.
+
+**Constraints:**
+
+1 - Para acessar um elemento na pilha, deve ser utilizada a função desempilhar ou implementar uma função que retorne o elemento que está no topo da pilha. Para inserir um elemento na pilha, deve ser utilizada a função empilhar.
+
+2 - o número que representa a base deve estar entre a seguinte faixa de valores: 2 <= b <= 16.
+
+**Output Format:**
+
+Imprimir o número convertido na base b esvaziando a pilha encadeada.
