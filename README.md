@@ -283,3 +283,40 @@ Ler dois números inteiros na seguinte sequência: número na base decimal e a b
 **Output Format:**
 
 Imprimir o número convertido na base b esvaziando a pilha encadeada.
+
+# Filas encadeadas - concatenação inversa
+Implemente uma função que receba 3 filas encadeadas (f1, f2, f3). A função deve concatenar f1 e f2, de forma que ambas sejam invertidas, em f3. Durante a concatenação, as filas f1 e f2 devem ser esvaziadas. Dica: utilizar pilhas como auxiliar.
+
+**Exemplo:**
+
+*Antes:*
+
+f1 = {1, 2, 3}
+
+f2 = {4, 5, 6, 7}
+
+f3 = {}
+
+*Depois:*
+
+f1 = {}
+
+f2 = {}
+
+f3 = {3, 2, 1, 7, 6, 5, 4}
+
+Para a implementação do exercício, utilize um TAD de filas encadeadas, podendo ser um dos códigos que foi apresentado em aula (disponível no repositório da disciplina no GitHub).
+
+**Input Format:**
+
+Na primeira linha, enquanto "-1" não for lido, ler números inteiros e inserir na primeira fila.
+
+Na segunda linha, enquanto "-1" não for lido, ler números inteiros e inserir na segunda fila.
+
+**Constraints:**
+
+As filas devem ser manipuladas apenas por funções. As únicas operações permitidas são: enfileirar e desenfileirar.
+
+**Output Format:**
+
+Imprimir a fila concatenada
