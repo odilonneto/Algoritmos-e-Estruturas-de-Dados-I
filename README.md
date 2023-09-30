@@ -320,3 +320,16 @@ As filas devem ser manipuladas apenas por funções. As únicas operações perm
 **Output Format:**
 
 Imprimir a fila concatenada
+
+# Recursão - resto de divisão
+Implemente uma função recursiva que calcule o resto da divisão entre dois números inteiros.
+
+**Input Format:**
+
+Na primeira linha deve ser lido um número inteiro N referente a quantidade de leituras de entradas.
+
+Para cada uma das N próximas linhas, ler dois números inteiros (a e b)
+
+**Output Format:**
+
+Em cada uma das N linhas, imprimir o resultado do resto da divisão dos respectivos números inteiros.
