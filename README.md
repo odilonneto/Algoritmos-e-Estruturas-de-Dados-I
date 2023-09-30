@@ -487,3 +487,27 @@ Será atribuída a nota zero no caso em que a verificação for feita em matriz 
 **Output Format:**
 
 Imprimir o conteúdo da matriz esparsa de saída como arranjo bidimensional.
+
+# Hashing - TAD tabela hash estática fechada
+Implemente um TAD para hashing estático fechado utilizando as seguintes abordagens vistas para a sala de aula: -> função hash: método da multiplicação -> rehash: segunda função hash --> h1(k) = método da multiplicação --> h2(k) = 1 + k % (B - 1) --> rh(k, i) = (h1(k) + i * h2(k)) % B
+
+**Input Format:**
+
+Na primeira linha devem ser lidos a constante c considerada na alocação de chaves (tipo float), sendo que 0 < c < 1 e o tamanho n da tabela hash (tipo int). Na segunda linha deve ser lida a quantidade de chaves que serão alocadas. Por fim, devem ser lidas as chaves que serão alocadas na tabela hash.
+
+**Output Format:**
+
+Imprimir a posição onde cada chave foi alocada.
+
+# Hashing - tabela hash com listas encadeadas
+Implemente um TAD para hashing estático aberto, onde as colisões devem ser resolvidas por meio de listas encadeadas ordenadas. A função hash deve ser resto de divisão, ou seja, h(k) = k % B, onde k é uma chave e B é o tamanho da tabela hash.
+
+**Input Format:**
+
+Na primeira linha deve ser lido o tamanho da tabela hash. Na segunda linha deve ser lida a quantidade de chaves que serão alocadas. Por fim, devem ser lidas as chaves que serão alocadas na tabela hash.
+
+**Output Format:**
+
+Imprimir as posições onde as chaves foram colocadas na tabela. Em seguida, imprimir a tabela hash inteira. Para isso, deve ser considerado o seguinte formato: "linha_i: -> item_0 -> item_1 -> ... -> item_n"
+
+Caso a i-ésima linha da matriz esparsa seja nula, basta imprimir "linha_i -> ".
