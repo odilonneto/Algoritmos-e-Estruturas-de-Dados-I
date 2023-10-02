@@ -28,6 +28,69 @@ Não utize a função gets para ler as strings. Em vez disso, use scanf (nos cas
 
 A primeira linha deve exibir o consumo total no imóvel seguido de N linhas com o consumo relativo de cada eletrodoméstico.
 
+# Struct - números racionais
+Crie uma struct para representar um número racional, ou seja, nessa estrutura deve haver os seguintes campos: numerador e denominador.
+
+Em seguida, crie uma função que receba dois números racionais. A função deverá retornar um outro número racional resultante da divisão dos números fornecidos como entrada.
+
+**Input Format:**
+
+A primeira linha é composta pelo numerador e denominador, respectivamente, do primeiro número racional.
+
+A segunda linha é composta pelo numerador e denominador, respectivamente, do segundo número racional.
+
+**Constraints:**
+
+As entradas lidas devem ser armazenadas em varíaveis do tipo de estrutura que você criou.
+
+**Output Format:**
+
+Número racional resultante da divisão dos números fornecidos como entrada.
+
+# Structs - Média Alunos
+Crie uma estrutura representando os alunos de um determinado curso. A estrutura deve conter a matrícula do aluno, nome, nota da primeira prova, nota da segunda prova e nota da terceira prova.
+
+(a) Permita ao usuário entrar com os dados de n alunos. (b) Encontre o aluno com maior nota da primeira prova. (c) Encontre o aluno com maior média geral. (d) Encontre o aluno com menor média geral (e) Para cada aluno diga se ele foi aprovado ou reprovado, considerando a média 6 para aprovação.
+
+Utilize a estrutura e os protótipos de funções abaixo:
+
+    #include <stdio.h>
+    #include <math.h>
+    
+    struct aluno_t{
+        int cod;
+        char nome[255];
+        float notas[3];
+        float media;
+    };
+    
+    void calculaMedia(aluno_t aluno[], int n){
+    
+    }
+    
+    int encontraMaiorMedia(aluno_t aluno[], int n){
+    
+    }
+    
+    int encontraMenorMedia(aluno_t aluno[], int n){
+    
+    }
+    
+    int encontraMaiorP1(aluno_t aluno[], int n){
+    
+    }
+    
+    int main(){
+    
+    return 0;
+    }
+**Input Format:**
+
+A primeira linha é composta por um número n de alunos. Seguem a matricula (númerico até 65000), nome (string max 255 caracteres) e 3 notas (float com 1 casa de precisão)
+
+**Output Format:**
+
+A saída devera informar, para cada aluno se ele foi aprovado ou reprovado. Seguido das soluções para as questões (b), (c) e (d)
 # Struct - batalha em turnos
 Gladstone está desenvolvendo um jogo simples de RPG em que há batalhas, os quais são por turnos, onde, em cada luta, os jogadores se revezam em cada ataque. Cada personagem, além do nome (string), tem os seguintes atributos representados por números inteiros: energia, defesa e força. Em cada ataque, a energia do personagem que está sofrendo o golpe é reduzida. O dano (redução de energia) é dado pela subtração entre o atributo de força (F) do atacante e o atributo de defesa do personagem atacado, o qual pode ter redução de energia. Caso a diferença entre força (atacante) e defesa (atacado) seja menor igual a zero, o dano será de 1 ponto. Se o dano resultar em energia negativa, o valor da mesma para o personagem derrotado deverá ser "0". Em cada batalha, o perdedor será o personagem que tiver a energia zerada ou que tiver o menor valor de energia. Também, poderá ocorrer empate. É importante ressaltar que o personagem com energia zerada não pode mais atacar!
 
@@ -44,6 +107,35 @@ Na linha seguinte, deve ser lida a quantidade de rodadas que deverá ter a batal
 Na primeira e segunda linha, imprimir o nome e a energia restante do primeiro e do segundo personagem, após a execução das rodadas de ataques.
 
 Na terceira lunha, imprimir o nome do personagem vencedor ou "empate", caso os personagens tiverem a mesma quantidade de energia (neste exercício não levando em conta que os personagens possam iniciar uma batalha com diferentes valores de energia).
+
+# Ponteiros - parte inteira e parte fracionária
+Implemente uma função que receba três variáveis: duas do tipo float e uma do tipo int. A função deverá retornar a parte inteira (int) e a fracionária (float) de um número do real. Para isso utilize o seguinte protótipo:
+
+    void frac(float n, int * in, float * fr)
+**Input Format:**
+
+A primeira linha da entrada contém um único inteiro N, indicando o número de casos de teste.
+
+**Constraints:**
+
+Os floats devem ser impressos considerando 3 casas decimais, ou seja, usando ".3f"
+
+**Output Format:**
+
+Para cada caso de teste de entrada deverá ser apresentada uma linha de saída, no seguinte formato: N=n I=in F=fr
+
+# Ponteiros - operações matemáticas valores
+Implemente uma função que receba três ponteiros de int (a, b, c). Na função, o endereço apontado c deve conter a diferença entre a e b (módulo da subtração entre a e b, ou seja, |a - b|). Após, o ponteiro a deve receber o resultado da soma entre o seu valor e o do ponteiro c. Por fim, o endereço apontado b deve receber o resultado da subtração entre o seu valor e o do ponteiro c.
+
+**Input Format:**
+
+Na primeira linha deve ser lido, em sequência, os valores a serem armazenados nos ponteiros a e b.
+
+**Output Format:**
+
+Em uma linha, imprimir os valores armazenados nos ponteiros em sequência seguindo o seguinte padrão:
+
+A=valor B=valor C=valor
 
 # Ponteiros - parâmetros de paralelepípedo
 Escreva uma função que receba três variáveis (altura, largura e comprimento) do tipo float para a representação de um paralelepípedo reto e três ponteiros do tipo float. Nessa função, cada ponteiro deverá armazenar uma medida relacionada ao palalepípedo, como:
@@ -85,6 +177,36 @@ Nas próximas N linhas, ler três valores do tipo float.
 
 Para cada vez em que os parâmetros da função forem lidos deverá ser apresentada uma linha de saída no seguinte formato: "A=X B=Y C=Z SOMA=TOTAL", sendo todos com precisão de uma casa decimal.
 
+# Ponteiros em structs - operações com números complexos
+Dada a estrutura abaixo:
+
+    typedef struct{
+        float real, img, mod;
+    }complexo;
+    
+Implemente uma função que receba um ponteiro do tipo complexo e duas variáveis estáticas do tipo float que represente as partes real e imaginária de um número complexo. A partir das varáveis do tipo float, os campos das estrutura devem ser atualizados.
+
+Em seguida, imprima os campos do "complexo" no seguinte formato: real sinal img i.
+
+Para a implementação do exercício proposto considere o seguinte protótipo de função e a equação abaixo:
+
+    void atualizar_complexo(complexo *c, float real, float img);
+Módulo de um número complexo:
+
+z = sqrt(real * real + img * img);
+
+Para o cálculo da raiz quadrada, você pode utilizar a função sqrt da biblioteca math.h.
+
+**Na primeira linha deve ser lido dois dados do tipo float.
+
+**Output Format:**
+
+Na primeira linha deve ser impresso o número complexo no seguinte formato: real sinal_numero_imaginário img i
+
+Na segunda linha, deve ser impresso o módulo do número complexo.
+
+Para a impressão de floats, considere a precisão de uma casa decimal (%.1f).
+
 # Ponteiro em structs - batalha em turnos v1.1
 Após ter o protótipo de jogo de RPG aprovado pelo CEO de uma importante empresa de games, Gladstone decide fazer melhorias na jogabilidade. Dessa vez o jogo deverá ter mais recursos. Consequentemente, a estrutura de cada personagem deve ter os seguintes campos: nome, energia, defesa, força e três golpes diferentes (A1, A2, A3), sendo cada um com um valor diferente. Após a execução de um golpe, o dano é dado pela seguinte equação:
 
@@ -120,6 +242,36 @@ Na primeira e segunda linha, imprimir o nome e a energia restante do primeiro e 
 
 Na terceira lunha, imprimir o nome do personagem vencedor ou "empate", caso os personagens tiverem a mesma quantidade de energia (neste exercício não levando em conta que os personagens possam iniciar uma batalha com diferentes valores de energia).
 
+# Alocação dinâmica - soma de vetores
+Implemente uma função que receba dois vetores de números inteiros. A função deverá retornar um vetor resultante da soma dos vetores entrada.
+
+Cabeçalho da solução proposta, onde v1 e v2 são vetores, n1 é o comprimento de v1 e v2 é o comprimento de v2:
+
+    int* soma(int *v1, int n1, int *v2, int n2);
+
+**Input Format:**
+
+Deve ser lido um valor inteiro n que representa a quantidade de elementos de um v. Em seguida, devem ser lidos os n elementos do vetor. Repetir o processo para o segundo vetor.
+
+**Output Format:**
+
+Vetor resultante da soma dos vetores de entrada.
+
+# Alocação dinâmica - mensagem codificada
+Luciano Capitão América tem um quadro no seu programa "Geladeira do Capitão América" onde é passada uma sequência de caracteres (string) que representa um alfabeto e uma sequência de números inteiros, sendo cada número a posição de um determinado caractere. O participante deve decifrar a mensagem utilizando o alfabeto e a sequência de números inteiros.
+
+Exemplo de alfabeto: oabeucis,-gfk Mensagem codificada: 1 7 9 10 4 5 10 8 1 5 10 1 10 11 1 13 5 Mensagem decodificada: oi,-eu-sou-o-goku
+
+Para ajudar os participantes desse quadro no programa, implemente uma função que receba uma string (alfabeto) e um vetor de números inteiros (mensagem codificada) alocado dinamicamente. A função deverá retornar uma string resultante da decodificação da mensagem utilizando o alfabeto.
+
+**Input Format:**
+
+Na primeira linha deve ser lida uma string Na segunda linha, enquanto -1 não for lido, deve ser lido um número inteiro.
+
+**Output Format:**
+
+Deve ser impressa a mensagem decodificada.
+
 # Alocação dinâmica - diagonal de matrizes
 Implemente uma função que receba uma matriz quadrática de números inteiros. A função deverá retornar um vetor (ponteiro) alocado dinamicamente com os elementos da diagonal principal da matriz.
 
@@ -145,6 +297,77 @@ Em seguida, ler o conteúdo de duas matrizes lxc.
 **Output Format:**
 
 Imprimir o conteúdo da matriz resultante da soma.
+
+# TAD - concatenação e soma de vetores
+Crie um TAD para processamento de vetores com a seguinte estrutura e operações, onde v é o vetor e n é a quantidade de elementos contidos no vetor:
+
+    typedef struct{
+        int *v; // Array (vetor) de tamanho n
+        int n; // tamanho do v
+        int q; // quantidade de elementos preenchidos no vetor
+    }Vetor;
+    
+    Vetor * iniciar(int n);
+    
+    int inserir(Vetor *v, int x); // inserir x na última posição. A função retorna 1 se a operação foi bem-sucedida
+    
+    Vetor * concatenar(Vetor *v1, Vetor *v2);
+    
+    Vetor * soma(Vetor *v1, Vetor *v2);
+    
+**Observação:** não é necessário considerar o arquivo .h, já que no HackerRank não tem como "upar" arquivos .h e .c.
+
+**Input Format:**
+
+Deve ser lido um valor inteiro n que representa a quantidade de elementos de um v. Em seguida, devem ser lidos os n elementos do vetor. Repetir o processo para o segundo vetor.
+
+**Output Format:**
+
+Vetores na seguinte ordem: resultantes da concatenação resultantes da soma
+
+# TAD - números reais
+Crie um TAD para números reais, onde i é a parte inteira e f é a parte fracionária, que pode ter valores entre 0 e 99, ou seja, o número real possui apenas duas casas decimais.
+
+Para isso, considere a estrutura e os protótipos de funções abaixo.
+
+    typedef struct{
+        int i; // parte inteira
+        int f; // parte fracionária
+    }Real;
+    
+    Real* criar(int i, int f);
+    
+    // Soma entre dois números reais
+    Real* soma(Real *r1, Real *r2);
+    
+    // Subtração entre dois números reais
+    Real* subtracao(Real *r1, Real *r2);
+    
+    // Arredondar
+    int arredondar(Real *r1);
+    
+    // Imprimir
+    void imprimir(Real *r1);
+
+**Observação:** não é necessário considerar o arquivo .h, já que no HackerRank não tem como "upar" arquivos .h e .c.
+
+**Input Format:**
+
+Na primeira linha, devem ser lidos dois números inteiros, sendo um a parte inteira e a outra, a fracionária, respectivamente.
+
+Na segunda linha, devem ser lidos dois números inteiros, sendo um a parte inteira e a outra, a fracionária, respectivamente.
+
+**Output Format:**
+
+Na primeira linha, imprimir o primeiro número real.
+
+Na segunda linha, imprimir o segundo número real.
+
+Na terceira linha, imprimir o resultado da soma entre os dois números reais.
+
+Na quarta linha, imprimir o resultado da subtração entre os dois números reais.
+
+Na quinta linha, imprimir o arredondamento do primeiro e do segundo número real.
 
 # TAD - números racionais
 Implemente um TAD (tipo abstrato de dados) para números racionais. O TAD deve ter as seguintes funções: criar número racional; soma; subtração; divisão; e mutiplicação entre números racionais.
