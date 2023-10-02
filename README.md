@@ -711,6 +711,19 @@ Será atribuída a nota zero no caso em que a verificação for feita em matriz 
 
 Imprimir o conteúdo da matriz esparsa de saída como arranjo bidimensional.
 
+# Hashing - conversão da tabela hash estática fechada para aberta
+O Sr. Urameshi implementou alguns anos atrás, uma tabela hash estática fechada, na qual, para a alocação de chaves é utilizada a função h(k) = k % B e para o tratamento de colisões é usado o overflow progressivo (sondagem linear). No entanto, Urameshi não previu que um dia a tabela poderia ficar cheia. Sendo assim, ajude o Dr. Uramesh a migrar essa tabela para uma tabela hash estática aberta com a mesma quantidade de buckets, mas com tratamento de colisões por listas encadeadas. Para isso, implemente uma função que receba uma tabela hash estática fechada. Essa função converter a entrada em uma tabela estática aberta.
+
+**Input Format:**
+
+Na primeira linha deve ser lido o tamanho N da tabela hash estática fechada. Na segunda linha deve ser lida a quantidade de chaves que serão alocadas. Por fim, devem ser lidas as chaves que serão alocadas na tabela hash estática fechada.
+
+**Output Format:**
+
+Imprimir o conteúdo da tabela hash resultante da conversão. Para isso, deve ser considerado o seguinte formato: "linha_i: -> item_0 -> item_1 -> ... -> item_n"
+
+Caso a i-ésima linha da matriz esparsa seja nula, basta imprimir "linha_i -> ".
+
 # Hashing - TAD tabela hash estática fechada
 Implemente um TAD para hashing estático fechado utilizando as seguintes abordagens vistas para a sala de aula: -> função hash: método da multiplicação -> rehash: segunda função hash --> h1(k) = método da multiplicação --> h2(k) = 1 + k % (B - 1) --> rh(k, i) = (h1(k) + i * h2(k)) % B
 
