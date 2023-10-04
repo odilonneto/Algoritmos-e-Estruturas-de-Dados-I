@@ -658,6 +658,31 @@ Na segunda linha, enquanto -1 não for lido, ler números inteiros e colocá-los
 
 Imprimir o conteúdo da lista (l3) retornada pela função.
 
+# Pilhas encadeadas - balanço de parênteses
+Dada uma expressão qualquer com parênteses, indique se a quantidade de parênteses está correta ou não, sem levar em conta o restante da expressão. Por exemplo:
+
+a+(b*c)-2-a está correto (a+b*(2-c)-2+a)*2 está correto
+
+enquanto
+
+(a*b-(2+c) está incorreto 2*(3-a)) está incorreto )3+b*(2-c)( está incorreto
+
+Ou seja, todo parênteses que fecha deve ter um outro parênteses que abre correspondente e não pode haver parênteses que fecha sem um previo parenteses que abre e a quantidade total de parenteses que abre e fecha deve ser igual.
+
+Para a solução desse exercício, utilize uma pilha encadeada de caracteres.
+
+**Input Format:**
+
+Deve ser lido um valor inteiro N que representa a quantidade de casos de teste. Cada uma das N linhas a seguir é uma string representando uma expressão.
+
+**Constraints:**
+
+As pilhas devem ser manipuladas apenas por funções. Por exemplo, o acesso a elementos deve ser feito apenas através da função desempilhar.
+
+**Output Format:**
+
+O arquivo de saída deverá ter a quantidade de linhas correspondente ao arquivo de entrada, cada uma delas contendo as palavras correct ou incorrect de acordo com as regras acima fornecidas.
+
 # Pilhas encadeadas - conversão de número decimal para uma base específica
 Implemente um número que receba dois números inteiros: número na base decimal (n) e a base (b). A função deverá retornar uma pilha encadeada resultante da conversão de n na base b.
 
@@ -676,6 +701,40 @@ Ler dois números inteiros na seguinte sequência: número na base decimal e a b
 **Output Format:**
 
 Imprimir o número convertido na base b esvaziando a pilha encadeada.
+
+# Filas encadeadas - semáforo
+Três estradas movimentadas ligam a uma única rodovia (principal), conforme a figura abaixo. Para o gerenciamento do trânsito, um semáforo foi adicionado para cada estrada, na qual, enquanto o sinal estiver verde, os veículos que chegaram primeiro podem acessar a rodovia principal. Quando o sinal estiver verde para uma estrada, para as outras duas estradas, o sinal será vermelho. No entanto, como as estradas estão cheias de buracos e os veículos devem transitar vagarosamente, para cada vez que o sinal estiver verde para uma estrada, apenas três veículos conseguem acessar a estrada principal antes do sinal ficar vermelho. Por outro lado, os semáforos possuem um sistema inteligente, no qual, enquanto a estrada estiver vazia, o sinal será vermelho. Também, durante o sinal verde, quando a estrada tiver menos que três veículos, assim que os mesmos acessarem a rodovia principal, o sinal ficará vermelho antecipadamente.
+
+![image](https://github.com/odilonneto/Algoritimos-e-Estrutura-de-dados-1/assets/92185618/abe8e43c-ed95-4a03-a09a-3448f95bb980)
+
+Implemente uma função para o gerenciamento do trânsito conforme ilustrado acima. A função deverá receber, como parâmetro, 4 filas encadeadas (E1, E2, E3, R). Na função, os elementos de E1, E2 e E3 devem ser transferidos para R de forma que simule o trânsito descrito acima.
+
+**Input Format:**
+
+Em cada uma das 3 primeiras linhas, enquanto -1 não for lido, ler números inteiros e inserí-los em suas respectivas filas (E1, E2 e E3).
+
+**Constraints:**
+
+O acesso aos elementos da fila deve ser através da função desenfileirar.
+
+**Output Format:**
+
+Imprimir a fila R.
+
+# Filas encadeadas - os últimos serão os primeiros
+Implementente uma função que receba uma pilha estática. A função deverá converter a pilha estática invertida em uma fila encadeada.
+
+**Input Format:**
+
+Enquanto -1 não for lido, ler números inteiros.
+
+**Constraints:**
+
+O acesso aos elementos da fila deve ser através da função desenfileirar.
+
+**Output Format:**
+
+Impressão da fila encadeada.
 
 # Filas encadeadas - concatenação inversa
 Implemente uma função que receba 3 filas encadeadas (f1, f2, f3). A função deve concatenar f1 e f2, de forma que ambas sejam invertidas, em f3. Durante a concatenação, as filas f1 e f2 devem ser esvaziadas. Dica: utilizar pilhas como auxiliar.
@@ -713,6 +772,41 @@ As filas devem ser manipuladas apenas por funções. As únicas operações perm
 **Output Format:**
 
 Imprimir a fila concatenada
+
+# Recursão - potenciação
+Implemente uma função recursiva que receba dois números naturais: a e n. A função deverá calcular a potência de a em relação à n (a^n, ou "a" elevada à "n") multiplicações sucessivas. Exemplo para a = 5 e n = 3: 5 * 5 * 5.
+
+**Input Format:**
+
+Na primeira linha devem ser lidos dois números inteiros >= 0.
+
+**Output Format:**
+
+Imprimir o resultado da função.
+
+# Recursão - multiplicação
+A multiplicação de dois números inteiros pode ser feita através de sucessivas somas, por exemplo, 5 ∗ 3 = 5 + 5 + 5 = 15. Implemente uma função que calcule o produto entre dois números utilizando recursão.
+
+**Input Format:**
+
+Na primeira linha devem ser lidos dois números inteiros positivos.
+
+**Output Format:**
+
+Imprimir o resultado da multiplicação dos dois números lidos.
+
+# Recursão - binário para decimal
+Implemente uma função recursiva que receba, pelo menos (ou seja, se você preferir, pode colocar mais parâmetros na função, desde que explique para quê servem), um vetor de números inteiros e o seu respectivo tamanho. Suponha que esse vetor represente um número binário, ou seja, cada elemento pode ser apenas 0 (zero) ou 1 (um). A função deverá retornar um número inteiro que represente a versão decimal do número binário. Para a implementação da solução, pode ser utilizada a função pow(x, y), que eleva x ao y.
+
+**Input Format:**
+
+Na primeira linha deve ser lido o tamanho do vetor.
+
+A partir da segunda linha, devem ser lidos os elementos (0's e 1's) que irão compor o vetor.
+
+**Output Format:**
+
+Imprimir o número na base decimal.
 
 # Recursão - resto de divisão
 Implemente uma função recursiva que calcule o resto da divisão entre dois números inteiros.
