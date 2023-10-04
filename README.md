@@ -821,6 +821,30 @@ Para cada uma das N próximas linhas, ler dois números inteiros (a e b)
 
 Em cada uma das N linhas, imprimir o resultado do resto da divisão dos respectivos números inteiros.
 
+# Algoritmos de busca - recuperação recorrente por transposição
+Implemente uma função que receba uma lista encadeada. Nessa função deverá ser implementado o método de recuperação recorrente transposição, no qual, cada vez que um registro é recuperado com sucesso, ele tem a posição trocada com o registro imediatamente anterior. Por exemplo, suponha que procuramos a chave 2 na seguinte: {7, 3, 4, 2, 6}. Após recuperar a chave 2, a mesma tem a posição trocada com a chave 3: {7, 3, 2, 4, 6}.
+
+**Input Format:**
+
+Na primeira linha, enquanto -1 não for lido, devem ser lidos os elementos da lista encadeada. Na segunda linha deve ser lida a quantidade de chaves que deverão ser procuradas). A partir da próxima linha, as chaves que serão procuradas devem ser lidas.
+
+**Output Format:**
+
+Após execução do algoritmo para cada caso teste, imprimir a lista encadeada.
+
+# Algoritmos de busca - combinação entre pesquisa binária e sequencial
+Implemente a função que receba quatro parâmetros: número inteiro a ser procurado, vetor de inteiros (v[] ou *v), tamanho do vetor (n) e um número inteiro representando tamanho mínimo (m). Nessa função, enquanto o espaço de busca (espaço coberto entre os índices esquerdo e direito em uma busca binária, ou seja, direito - esquerdo + 1) for maior que m, o método de busca binária deve ser aplicada. Quando o espaço de busca ficar menor ou igual a m, a busca sequencial deverá ser executada. Se a busca sequencial for aplicada, o espaço de busca deverá ser impresso (caso houver). Ao final a posição do item procurado no vetor é retornada. Caso o item não seja encontrado, a função deverá retornar -1.
+
+**Input Format:**
+
+Na primeira linha deve ser lido um número inteiro que deverá ser procurado. Na segunda linha deve ser lido o tamanho do vetor. Na terceira devem ser lidos os elementos do vetor. Na quarta linha deve ser lida o tamanho mínimo da partição (m) para fazer a busca binária.
+
+**Output Format:**
+
+Na primeira linha deve ser impresso o subvetor referente ao espaço de busca a partir do momento em que a busca sequencial é executada. Na próxima linha deve ser impressa a posição retornada pela função.
+
+Caso a busca sequencial não tenha sido executada, apenas a posição retornada pela função deve ser impressa.
+
 # Algoritmos de busca - recuperação recorrente mover-para-frente recursivo
 Implemente uma função que receba um arranjo de números inteiros. Nessa função deverá ser implementado, utilizando recursão, o método de recuperação recorrente mover-para-frente, no qual, cada vez que um registro é recuperado com sucesso, ele é movimentado para a primeira posição.
 
@@ -864,6 +888,17 @@ No seu código pode ter, no máximo, apenas um loop.
 
 Imprimir o contrúdo da lista ordenada.
 
+# Algoritmos de ordenação - ordenação simples em listas encadedadas
+Implemente um dos algoritmos de ordenação simples apresentados em sala de aula (bublesort, selection sort ou insertion sort) para ordenar elementos de uma lista encadeada de números inteiros positivos.
+
+**Input Format:**
+
+Enquanto -1 não for lido, ler número inteiro positivo.
+
+**Output Format:**
+
+Imprimir o conteúdo da lista encadeada ordenada.
+
 # Ordenação de strings - ordenação simples em listas encadeadas de strings
 Implemente um algoritmo de ordenação simples para ordenar uma lista encadeada de strings.
 
@@ -874,6 +909,21 @@ Na primeira linha deve ser lida a quantidade de elementos que serão inseridos n
 **Output Format:**
 
 Imprimir o conteúdo da lista encadeada após a ordenação.
+
+# Algoritmos de ordenação - recursividade na ordenação simples 
+Implemente, utilizando recursão, um dos algoritmos de ordenação simples apresentados em sala de aula (bublesort, selection sort ou insertion sort).
+
+**Input Format:**
+
+Na primeira linha deve ser lido o tamanho do vetor. Na segunda linha devem ser lidos os elementos do vetor.
+
+**Constraints:**
+
+Dica: para os códigos apresentados em aulas, transforme apenas o for externo em recursão. Em outras palavras, no seu código pode ter, no máximo, apenas um laço for.
+
+**Output Format:**
+
+Imprimir o vetor ordenado.
 
 # Ordenação de structs - Ordenação de dados de alunos
 Adapte um dos algorimos de ordenação para o vetor de elementos da seguinte estrutura:
