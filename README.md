@@ -410,6 +410,36 @@ Na quinta linha deve ser impresso o resultado da multiplicação entre os númer
 
 Na sexta linha deve ser impresso o resultado da divisão entre os números racionais r1 e r2 seguindo o seguinte formato: "r1/r2=num/den".
 
+# Listas estáticas - lista de contatos
+Dada uma função que receba uma lista estática de contatos e uma string. Essa função deverá imprimir os contatos que contêm essa string no nome. Por exemplo, para a string "son", podem ser encontrados nomes como: Son**ia, Ander**son, Jeffer**son**.
+
+**Input Format:**
+
+A primeira linha a ser lida deve ser a string que deve ser procurada. Em seguida, deve ser lida um número inteiro referente à quantidade de nomes que devem ser incluídos na lista.
+
+**Constraints:**
+
+Usar TAD de listas estáticas.
+
+**Output Format:**
+
+Imprimir os nomes que contêm a string procurada.
+
+# Listas estáticas - pares e ímpares
+Implemente uma função que receba três listas estáticas (l1, l2, l3), sendo as duas últimas listas vazias. A função deverá colocar os itens pares da lista l1 na l2, e os ímpares, na l3.
+
+**Input Format:**
+
+Enquanto -1 não for lido, ler números inteiros e colocá-los na lista l1.
+
+**Output Format:**
+
+Na primeira linha deve ser impresso o conteúdo da lista l2.
+
+Na linha linha deve ser impresso o conteúdo da lista l3.
+
+Caso uma das listas esteja vazia, imprimir -1 (menos um).
+
 # Listas estáticas - procurar sub-lista
 Implemente uma função que receba duas listas estáticas (l1, l2). A função deverá retornar a posição lista l2 dentro de l1. Caso a lista l2 não estiver na l1, retornar "-1".
 
@@ -430,6 +460,94 @@ Na primeira linha, enquanto "-1" não for lido, ler números inteiros. Na segund
 **Output Format:**
 
 Imprimir a posição da lista l2 na l1.
+
+# Pilhas estáticas - decimal para binário
+Utilizando uma pilha estática, escreva uma função que receba um número inteiro positivo no formato decimal e o converta para o formato binário. A função deverá retornar a pilha com os dígitos do número binário.
+
+**Input Format:**
+
+Na primeira linha, um número inteiro deve ser lido.
+
+**Constraints:**
+
+As pilhas devem ser manipuladas apenas por funções. Por exemplo, o acesso a elementos deve ser feito apenas através da função desempilhar ou que retorne o valor que está no topo.
+
+**Output Format:**
+
+Imprimir o número binário.
+
+# Pilhas estáticas - resolução de expressão posfixa
+Implemente uma função que receba uma string que represente uma expressão matemática na notação posfixa. A função deverá retornar o resultado da expressão.
+
+Para a implementação da solução, considere que cada operando tenha valor entre 0 e 9.
+
+**Input Format:**
+
+Deve ser lida uma string que represente uma expressão posfixa.
+
+**Constraints:**
+
+Para a solução do problema, deve ser utilizada uma pilha estática para armazenar os números inteiros.
+
+As pilhas devem ser manipuladas apenas por funções. Por exemplo, o acesso a elementos deve ser feito apenas através da função desempilhar ou que retorne o valor que está no topo.
+
+**Output Format:**
+
+Resultado da expressão.
+
+# Filas estáticas - intercalação de filas estáticas
+Implemente uma função que receba duas filas compostas por números naturais. A função deverá intercalar as duas filas. Em cada intercalação, o maior elemento deve ser enfileirado primeiro.
+
+**Exemplo:**
+
+    Antes:
+
+    f1 = {1, 5, 3}
+
+    f2 = {4, 2, 3, 4}
+
+    f3 = {}
+
+    Depois:
+
+    f1 = {}
+
+    f2 = {}
+
+    f3 = {4, 1, 5, 2, 3, 3, 4}
+
+**Input Format:**
+
+Na primeira linha, enquanto "-1" não for lido, ler números inteiros. Na segunda linha, a mesma restrição da primeira linha deve ser aplicada.
+
+**Constraints:**
+
+O acesso aos elementos da fila deve ser através da função desenfileirar.
+
+**Output Format:**
+
+Imprimir a fila intercalada.
+
+# Filas estáticas - gerenciamento de estacionamento
+O Sr. Pupunha, um grande investidor, comprou um terreno e decidiu fazê-lo um estacionamento, o qual tem capacidade para 10 carros. Ao estacionar o automóvel, o cliente recebe um ticket representando por um número inteiro. No entanto, o terreno é muito estreito e, consequentemente, os carros devem ser colocados em fila. Nesse terreno, a entrada é pelos fundos e a saída é pela frente. Caso um cliente precisar sair com o seu carro, os outros automóveis deverão ser retirados e estacionados novamente. Por exemplo, considere a seguinte fila de carros: {1, 2, 3, 4, 5, 6, 7, 8}, onde o primeiro elemento é o veículo que está mais próximo à saída e o último é mais próximo da entrada. Caso o carro 4 for retirado, os veículos 1, 2 e 3 devem estacionados novamente pela entrada do estacionamento. Desse modo, após a remoção do veículo 4, o estacionamento ficaria na seguinte forma: {5, 6, 7, 8, 1, 2, 3}.
+
+Implemente uma função que receba uma fila estática (representação do estacionamento) e um número inteiro (ticket ou id do carro) como parâmetros e faça o gerenciamento de veículos no estacionamento do Pupunha. Enquanto o ticket não for encontrado, o primeiro elemento da fila deverá ser removido e recolocado no final da da fila. Também, deve ser tratado o caso em que o elemento não é encontrado na fila. A função deverá retornar um número inteiro representado a quantidade de veículos que precisaram ser estacionados novamente para que o cliente pudesse retirar o seu carro.
+
+**Input Format:**
+
+Na primeira linha, enquanto -1 não for lido, ler números inteiros. Na segunda linha deve ser lido um número inteiro que será o ticket a ser procurado na fila.
+
+**Constraints:**
+
+O acesso aos elementos da fila deve ser através da função desenfileirar.
+
+**Output Format:**
+
+Na primeira linha, o conteúdo da fila, após a operação de busca, deve ser impresso.
+
+Na segunda linha impresso a quantidade de movimentações que foram necessárias para procurar o ticket.
+
+Na terceira linha deve ser impressa a string "sucesso" caso o ticket for encontrado, ou "falha", caso contrário.
 
 # Pilhas estáticas - mina de diamante
 O Sr. Alcídes está trabalhando em uma mina para extrair o máximo que consegue de diamantes "<>". Ele deve excluir todas as particulas de areia "." do processo e a cada retirada de diamante, novos diamantes poderão ser encontrados. Se ele tem como uma entrada .<...<<..>>....>....>>>., três diamantes são formados: "O primeiro é retirado de "<..>", "<>" e "<.......>". Implemente uma função que receba uma string representado a carga com areia e diamante. A função deverá retornar a quantidade de diamantes contidas na carga. Para a solução do problema, deve ser utilizada uma pilha estática.
@@ -464,6 +582,56 @@ O acesso aos elementos da fila deve ser através da função desenfileirar.
 **Output Format:**
 
 Imprimir a fila ordenada em ordem decrescente.
+
+# Listas encadeadas - soma de itens
+Implemente uma função que receba uma lista encadeada. A função deverá retornar a soma dos elementos da lista.
+
+**Input Format:**
+
+Enquanto -1 não for lido, ler números inteiros e colocá-los na lista encadeada.
+
+**Output Format:**
+
+Imprimir o resultado da soma dos elementos.
+
+# Listas encadeadas - dividir lista encadeada
+Implemente uma função que receba duas listas encadeadas, sendo uma com itens (l1) e a outra vazia (l2). A função deverá transferir a metade do conteúdo de l1 para l2.
+
+**Input Format:**
+
+Enquanto -1 não for lido, ler números inteiros.
+
+**Output Format:**
+
+Imprimir o conteúdo das duas listas.
+
+# Listas encadeadas - ocorrências de itens
+Implemente uma função que receba uma lista encadeada e um número inteiro. A função deverá retornar a quantidade de vezes que o número inteiro aparece na lista.
+
+**Input Format:**
+
+Na primeira linha, enquanto -1 não for lido, ler números inteiros e colocá-los na lista encadeada.
+
+Na segunda linha, ler um número inteiro.
+
+**Output Format:**
+
+Imprimir a quantidade de vezes que o número aparece na lista
+
+# Pilhas encadeadas - Inverter string
+Implemente uma função que inverta uma string através de uma pilha encadeada de caracteres.
+
+**Input Format:**
+
+Na primeira linha deve ser lida uma string.
+
+**Constraints:**
+
+As pilhas devem ser manipuladas apenas por funções. Por exemplo, o acesso a elementos deve ser feito apenas através da função desempilhar ou que retorne o valor que está no topo.
+
+**Output Format:**
+
+Imprimir a string invertida.
 
 # Listas encadeadas - elementos em comum
 Implemente uma função que receba duas listas encadeadas (l1 e l2). A função deverá retornar uma lista encadeada ordenada com os elementos existentes nas duas listas de entrada.
