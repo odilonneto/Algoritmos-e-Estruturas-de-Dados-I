@@ -1,5 +1,5 @@
 # Algoritimos-e-Estrutura-de-dados-1
-Codigos feito por Odilon Ramos da Silva Neto durante o curso de Engenharia de Computação, na Universidade Tecnoligica Federal do Paraná(UTFPR). 
+Codigos feito por Odilon Ramos da Silva Neto durante o curso de Engenharia de Computação, na Universidade Tecnológica Federal do Paraná(UTFPR). 
 
 Materia: Algoritmos e Estruturas de Dados 1, ministrada por Jefferson Tales Oliva.
 
