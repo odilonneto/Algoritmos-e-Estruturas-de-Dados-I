@@ -873,6 +873,17 @@ Para cada uma das l linhas seguintes devem ser lidos c números inteiros.
 
 Imprimir a matriz com as linhas ordenadas.
 
+# Algoritmos de ordenação - cobinação entre quicksort e ordenação simples
+Implemente uma combinação entre o quicksort e um método de ordenação simples. A função deve, pelo menos, receber três parâmetros: vetor de inteiros (v[] ou *v), tamanho do vetor (n) e um número inteiro representando tamanho mínimo (m). Nessa função, enquanto a partição for maior que m, o método de ordenação que deve ser aplicado é quicksort. Caso contrário, um método de ordenação simples (bubblesort, select sort ou insert sort) deve ser utilizado na partição.
+
+**Input Format:**
+
+Na primeira linha deve ser lido o tamanho do vetor. Na segunda linha devem ser lidos os elementos do vetor. Na terceira linha deve ser lido um número inteiro que represente o tamanho mínimo de partição.
+
+**Output Format:**
+
+Imprimir o vetor ordenado.
+
 # Algoritmos de ordenação - recursividade na ordenação simples de uma lista encadeada de floats
 Implemente, utilizando recursão, um dos algoritmos de ordenação simples apresentados em sala de aula (bublesort, selection sort ou insertion sort) para a ordenação de uma lista encadeada de floats.
 
@@ -898,6 +909,28 @@ Enquanto -1 não for lido, ler número inteiro positivo.
 **Output Format:**
 
 Imprimir o conteúdo da lista encadeada ordenada.
+
+#Ordenação de strings - select sort
+Implemente o algoritmo selection sort para ordenar vetor de strings.
+
+**Input Format:**
+
+Na primeira linha deve ser lido o tamanho do vetor. A partir da segunda linha, ler as strings do vetor.
+
+**Output Format:**
+
+Imprimir o vetor após a ordenação.
+
+#Ordenação de strings - heapsort
+Implemente o algoritmo heapsort para ordenar vetor de strings.
+
+**Input Format:**
+
+Na primeira linha deve ser lido o tamanho do vetor. A partir da segunda linha, ler as strings do vetor.
+
+**Output Format:**
+
+Imprimir o vetor após a ordenação.
 
 # Ordenação de strings - ordenação simples em listas encadeadas de strings
 Implemente um algoritmo de ordenação simples para ordenar uma lista encadeada de strings.
@@ -948,6 +981,26 @@ Na primeira linha deve ser lido o tamanho do vetor. A partir da segunda linha, l
 **Output Format:**
 
 Imprimir os registro ordenados. Diferentemente da forma leitura, cada registro deve ser impresso em uma linha.
+
+# Matrizes esparsas - soma de elementos na diagonal 
+Implemente uma função que receba uma matriz esparsa como parâmetro. A função deve retornar o resultado da soma entre os elementos da diagonal principal da matriz esparsa.
+
+**Input Format:**
+
+Na primeira linha deve ser lido um número inteiro, que representará os números de linhas e de colunas (matriz quadrada). Em seguida, uma matriz deve ser lida. A matriz bidimensional deve ser convertida para uma matriz esparsa.
+
+**Output Format:**
+
+Resultado da soma dos elementos da diagonal principal.
+
+# Matrizes esparsas - elementos nulos
+Implemente uma função que retorne a quantidade de elementos nulos de uma matriz esparsa.
+
+**Input Format:**
+
+A primeira linha contém os números de linhas e de colunas. Em seguida, uma matriz deve ser lida.
+
+Por último, a matriz bidimensional deve ser convertida para uma matriz esparsa.
 
 # Matrizes esparsas - vetor com soma de linhas da matriz
 Implemente uma função que receba uma matriz esparsa. A função deverá retornar um vetor onde o i-ésimo elemento é igual a soma de todos os elementos da i-ésima coluna da matriz.
