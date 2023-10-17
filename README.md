@@ -1,7 +1,5 @@
 # Algoritimos-e-Estrutura-de-dados-1
-Codigos feito por Odilon Ramos da Silva Neto durante o curso de Engenharia de Computação, na Universidade Tecnológica Federal do Paraná(UTFPR). 
-
-Materia: Algoritmos e Estruturas de Dados 1, ministrada por Jefferson Tales Oliva.
+Abaixo segue o nome e enunciado de cada exercício resolvido.
 
 # Struct - eletrodomésticos
 Implemente um programa que faça o controle do consumo de energia dos eletrodomésticos de um imóvel. Primeiro leia os N eletrodomésticos que contendo nome, potência (inteiro, em kW) e tempo ativo por dia (real, em horas). Em seguida, leia um número inteiro d (quantidade de dias) e calcule:
